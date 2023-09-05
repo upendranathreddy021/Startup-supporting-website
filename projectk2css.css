@@ -345,6 +345,30 @@ transition: 3s;
     justify-content: space-evenly;
     align-items: center;
 }
+@media screen and (min-width:360px) and (max-width:700px){
+
+.cardtype{
+    display: block;
+    width: 200%;
+    height: 100vh;
+}
+.card{
+    text-align: center;
+    width: 29%;
+    height: 36.25vh;
+    background-color: rgba(47, 180, 197, 0.795);
+    border-top: 1vh goldenrod solid;
+}
+.card h3{
+    font-size: 12vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(23, 12, 51);
+}
+
+}
 .card{
     text-align: center;
     width: 29%;

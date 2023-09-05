@@ -1,94 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./loginsignup.css"/>
+    <link href="./loginsignup.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="all">
-<div class="page">
-    <!-- first division first page -->
-            <div class="page-1">
-                <div class="page1-1">
-                <div class="sign"><h1>Sign<span>Up</span></h1></div>
+    <div class="body">
+<!--         <button onclick="display(this)" id="mainbody">Click here to View</button> -->
+
+        <div id="body1">
            
-                <div class="name">
-                    <div>
-                        <input type="text" placeholder="First Name"/>
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Last Name"/>
-                    </div>
-                </div> 
-                <div class="mail">
-                    <input type="email" placeholder="Enter Email"/>
+            <div class="bodyall">
+            <div id="body11">
+                <div class="pagechg">
+                    <p class="headname" onclick="signup(this)" id="signbtn"> Sign Up</p><p class="headname" onclick="login(this)" id="loginbtn"> Log In</p>
                 </div>
-                <div class="pwd">
-                    <input class="pwd1" "password" placeholder=" Enter Password"/><br>
-                    <input class="pwd2" type="password" placeholder=" Confirm Password"/>
-        
-                </div>   
-                <div class="cond">
-                   <input type="checkbox"> <p>accept the terms of use &#38; privacy policy</p>
-                </div>
-                <div class="btn">
-                    <div class="sbtbtn">
-                        <input type="submit" value="Register">
-                    </div>
-        
-                </div>
-                <div class="reg">
-                    <p>Already have an Account <a href="./projectk2login.html">Login Here</a></p>
-                </div>
-                </div>
- <!-- first division second page-->
-                <div class="page1-2">
-                    <div class="page2">
-                        <div class="page2-1">
-                        <h2>SignUp with</h2>
-                        <div class="btns">
-                        <a href="https://accounts.google.com/InteractiveLogin/signinchooser?ifkv=Af_xneFk6IugcCr-nJz2-x_GV5CMkq2UK6OFprcA5l09Jk6JW00BUkzCyKdCbCDN38Il-XNu8aCbIw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><div class="btns1"><p><i class="fa-brands fa-google fa-xl" style="color: #1d6ffc;"></i>&nbsp; Google</p></div></a>
-                        <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account"><div class="btns2"><p><i class="fa-brands fa-linkedin fa-xl" style="color: #2066df;"></i>&nbsp; LinkedIn</p></div></a>
-                        <a href="https://www.facebook.com/login.php"> <div class="btns3"><p><i class="fa-brands fa-facebook fa-xl" style="color: #105ce0;"></i>&nbsp; FaceBook</p></div></a>
-                        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Faccountscenter.instagram.com%2F%3F__coig_login%3D1"><div class="btns4"><p><i class="fa-brands fa-square-instagram fa-xl" style="color: #23385c;"></i>&nbsp; Instagram</p></div></a>
-                    </div>
+                
+                <div id="signpage">
+                    <p>Full Name*</p>
+                    <input type="text" onblur="fullname(this)" placeholder="Enter your name here" id="name"/>
+                   <p id="fullnameerr"></p>
+                <p>Email*</p>
+                <input type="email" onblur="email(this)" placeholder="Enter your Email here" id="email"/>
+                <p id="emailerr"></p>
+                <p>Enter password*</p>
+                    <input type="password" onblur="password(this)" placeholder="Enter Your Password" />
+                    <p id="passworderr"></p>
+                    <p>Contact*</p>
+                    <input type="text" onblur="contact(this)" placeholder="Enter Contact Number"/>
+                    <p id="contacterr"></p>
+                   <div class="term"> <input type="checkbox" id="cond" /><span id="condcheck">accept the terms &amp; conditions</span></div>
+                  <div class="btnssign"><button>Back</button><button onclick="verify()">Save &amp; Verify</button></div>
+
                 </div>
             </div>
- <!-- second division first page -->
-            <div class="page2-a">
-                <div class="page2-1">
-                <h2>SignUp with</h2>
-                <div class="btns">
-                <a href="https://accounts.google.com/InteractiveLogin/signinchooser?ifkv=Af_xneFk6IugcCr-nJz2-x_GV5CMkq2UK6OFprcA5l09Jk6JW00BUkzCyKdCbCDN38Il-XNu8aCbIw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><div class="btns1"><p><i class="fa-brands fa-google fa-xl" style="color: #1d6ffc;"></i>&nbsp; Google</p></div></a>
-                <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account"><div class="btns2"><p><i class="fa-brands fa-linkedin fa-xl" style="color: #2066df;"></i>&nbsp; LinkedIn</p></div></a>
-                <a href="https://www.facebook.com/login.php"> <div class="btns3"><p><i class="fa-brands fa-facebook fa-xl" style="color: #105ce0;"></i>&nbsp; FaceBook</p></div></a>
-                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Faccountscenter.instagram.com%2F%3F__coig_login%3D1"><div class="btns4"><p><i class="fa-brands fa-square-instagram fa-xl" style="color: #23385c;"></i>&nbsp; Instagram</p></div></a>
-            </div>
- <!-- second division second page -->
-        <div class="page2-2">
-            <div class="login2">
-                <p>Don't have an Account? <a href="./projectk2signup.html">Register here</a> ,it takes less than a minute</p>
-                <br><br><br>
-               <div class="lgnuser">
-                <label>Username</label><br>
-                <input type="text" class="loginput text1"/>
-                <br><br><br>
-               </div class="lgnpwd">
-               <div>
-                <label>Password</label><br>
-                <input type="password" class="loginput pwd1"/>
-               </div>
-               <br>
-               <div class="lgnfgpwd"><a href="" class="lgnfg">Forgot Password</a></div>
-               <div class="loginbtn">
+            <div id="body12">
+                <div class="pagechg">
+                    <p class="headname" onclick="signup(this)" id="signbtn"> Sign Up</p><p class="headname" onclick="login(this)" id="loginbtn"> Log In</p>
+                </div>
+                
+                <div id="loginpage">
+                    <p>Full Name*</p>
+                    <input type="text" placeholder="Username" id="usrn" />
+                    <p>Password*</p>
+                    <input type="password" placeholder="Password" id="pwd"/>
+                    <div class="items"><div class="items1"><input type="checkbox"><p>Remember me</p> </div><p>Forgot Password ?</p></div>
+                    
                 <button>Login</button>
-               </div>
+                    <p>Don't have an account? <span>SignUp</span></p>
+                </div>
             </div>
         </div>
-            </div>
-   </div>
-   </div>
+
+        </div>
+        
+
+    </div>
+    <script src="loginsignup.js"></script>
 </body>
 </html>
