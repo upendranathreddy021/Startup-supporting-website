@@ -1,0 +1,347 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Edu+VIC+WA+NT+Beginner&family=Genos:wght@100&family=Gluten:wght@100&family=Nabla&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+.navbar{
+    background: rgb(58, 61, 61);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navigation a{
+    color: rgb(225, 248, 244);
+}
+
+.nav1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(42, 218, 165);
+}
+/*.nav2{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2.3px;
+    font-size: 27px;
+    padding-right: 70px;
+}*/
+
+.nav3{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    font-size: 22px;
+    text-decoration: none;
+}
+.navbar a:link{
+    text-decoration: none;
+    color: black;
+}
+/*.nav3 input[type=search]{
+    outline: none;
+    width: 210px;
+    height: 25px;
+    background-color: transparent;
+    border: 3px solid rgb(230, 68, 19);
+    border-radius: 12px;
+    position: absolute;
+    top: 20px;
+    right: 50vh;
+}*/
+/*
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 90%;
+    height: 92vh;
+    background-color: rgb(1, 1, 2);
+    box-sizing: border-box;
+    position: relative;
+    top: 10vh;
+    left: 0px;
+    z-index: 1;
+}
+.banner div{
+    padding-top:20px;
+    padding-left: 20px;
+    
+}
+.banner-1{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    width: 50%;
+    height: 500px;
+    background-color:rgb(10, 4, 9);
+}
+.banlogo{
+    font-size: 40px;
+    color: white;
+    line-height: 55px;
+    outline: none;
+    -webkit-box-reflect:before 1px linear-gradient(transparent,rgb(29, 6, 34));
+animation: logodgn 5s linear infinite;
+}
+@keyframes logodgn{
+    0%,18%,20%,50.1%,60%,70.1%,80%,90.1%,92%{
+        color:rgb(81, 132, 161);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,69%,80.1%,90%,92.1%,94%,96%,100%{
+        color: white;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 82px #03bcf4,
+        0 0 160px #03bcf4,
+        0 0 320px #79cbe4,
+        0 0 740px #03bcf4,
+        0 0 760px #91b2bd,
+        0 0 800px #03bcf4
+    }
+}
+.banner-1 h2{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 30px;
+    color: rgb(145, 211, 38);
+
+
+}
+.banner-2 img{
+padding-top: 40px;
+padding-right: 20px;
+}
+.banner-2{
+    
+    padding-top: 40px;
+    width: 50%;
+    height: 80vh;
+}
+
+.ban-img{
+    width: 520px;
+    height: 490px;
+}*/
+.banner2{
+    
+    width: 100%;
+    height: 119vh;
+    padding: 9vh 0% 0vh 22% ;
+     color: whitesmoke;
+    background-color: rgba(15, 32, 27);
+}
+.divp{
+   
+    width: 64%;
+    height: 80vh;
+    padding: 2vh 12vh 2vh 8vh;
+    text-align: justify;
+}
+.divp p span{
+    font-weight: 600;
+    font-size: 35px;
+}
+.divp p{
+    text-indent: 20px;
+    font-size: 18px;
+    word-spacing: 3.5px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+}
+.divp h2{
+    font-size: 25px;
+    word-spacing: 3.5px;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+.footer12{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    box-sizing: border-box;
+    padding-top: 30px;
+    
+}
+.stry{
+    font-size: 15px;
+}
+.footer12 p:not(.stry){
+    font-size:  24px;
+font-family: monospace;
+}
+.footer12 a{
+    padding: 7px 0px;
+    text-decoration: underline black;
+    color: black;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.f1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer1{
+    background-color: darkkhaki;
+    width:100%;
+    height:80vh;
+}
+.footer11{
+    box-sizing: border-box;
+padding-left: 7vw;
+    display:flex;
+    gap: 1.6vw;
+    align-items: first baseline;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.end{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+.end a:link{
+    color: black;
+}
+.blk{
+    
+    height: 350vh;
+    padding:0% 16% 0% 12%;
+    color: whitesmoke;
+    background-color: rgba(15, 32, 27);
+}
+.blk1{
+    padding-top: 9%;
+   box-sizing: border-box;
+   
+
+}
+.blk11-p{
+    font-size: 30px;
+    font-family: monospace;
+    text-align: end;
+    padding-right: 28%;
+}
+.blk11{
+    
+    font-size: 98px;
+    font-family: 'Eczar', serif;
+    line-height: 10vh;
+    
+}
+.blk12{
+    padding-top: 10%; 
+    padding-left: 30%;
+}
+.blk12 h3{
+   
+    
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 50px;
+}
+.blk12 span{
+    font-family: 'Genos', sans-serif;
+}
+.blk12 .blk12p{
+    letter-spacing: 0.3px;
+    padding-top: 6%;
+    font-size: 20px;
+    font-family: monospace;
+    padding-bottom: 9%;
+}
+.blk12 .line{
+    width: 100%;
+    height: 0.4vh;
+    background-color: blanchedalmond;
+}
+.para{
+    display: flex;
+    justify-content: space-around;
+    gap: 2.6vw;
+ text-align: justify;
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding-bottom: 9%;
+}
+.para1 span{
+    font-family: cursive;
+}
+.para1{
+    width: 50%;
+}
+.para2{
+    width: 50%;
+}
+.infoimg{
+    padding-bottom: 4vh;
+    padding-top: 5vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.infoimg h5{
+    box-sizing: border-box;
+    padding-left: 21vw;;
+    font-size: 80px;
+    font-family: 'Genos', sans-serif;
+}
+.infom{
+    text-align: right;
+    padding-left: 11vw;
+    padding-top: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    
+}
+.infom .pg{
+    width: 40%;
+    height: 100%;
+    font-family: monospace;
+    font-size: 28px;
+text-align: left;
+}
+.pg p{
+    
+    padding-top: 3vh;
+    font-size: 18px;
+    text-align: justify;
+}
+.infom .pgimg{
+    width: 60%;
+    height: 100%;
+
+}
+.pging img{
+    width: 100%;
+    height: 100%;
+}
+.line{
+    width: 100%;
+    height: 0.4vh;
+    background-color: blanchedalmond;
+}
+

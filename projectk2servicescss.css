@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Edu+VIC+WA+NT+Beginner&family=Genos&family=Gluten:wght@100&family=Kanit:wght@300&family=Lobster&family=Nunito:wght@200&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.navi{
+    background: #222e2b;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+    align-items: start;
+}
+.acc{
+    padding-top: 5vh;
+    width: 100%;
+    height: 60vh;
+    padding-left: 50vh;
+    
+}
+.acc h1 .fa-solid{
+    position: absolute;
+    right: 20px;
+    color: rgb(200, 233, 14);
+}
+.acc .acc1{
+    display:none;
+    padding-left: 10vh;
+}
+
+.acc h1{
+    border: 2px whitesmoke;
+    background: black;
+    width: 40%;
+    position: relative;
+    height: 5vh;
+    font-size: 23px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.acc p{
+    text-align: center;
+    color: black;
+    width: 35%;
+    height: 5vh;
+    padding: 0.7vh 0vh;
+    font-size: 20px;
+    line-height: 5vh;
+    font-weight: 600;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px black;
+   
+}
+.acc1 p:nth-child(odd){
+    background-color: pink;
+}
+.acc1 p:nth-child(even){
+    background-color: rgb(115, 185, 87);
+}
+
+.nav{
+    width: 20%;
+}
+.nav1 a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.nav1{
+    padding-right: 8vh;
+    height: 100%;
+font-family: 'Source Code Pro', monospace;
+display: flex;
+align-items: center;
+width: 80%;
+font-size: 25px;
+gap: 9vh;
+}
+.part1{
+    background: #222e2b;
+    color: whitesmoke;
+}
+.part11{
+    width: 100%;
+    height:95vh;
+}
+.part11 h1{
+    padding-top: 15vh;
+    font-size: 110px;
+    padding-left: 23vh;
+    padding-bottom: 3vh;
+    font-family: 'Eczar', serif;
+    
+}
+.part11 h2{
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 30%;
+}
+.part11 div{
+    padding-top: 6vh;
+    padding-left: 30%;
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 4vh;
+
+}
+.line{
+
+    margin-left: 29.9%;
+    width: 60%;
+    box-sizing: border-box;
+    height: 0.5vh;
+    background-color: rgb(193, 218, 224);
+}
+.part2{
+    width: 100%;
+    height: 100vh;
+  padding-top: 5vh;
+    
+}
+.part2 h1{
+    padding-left: 10vh;
+font-size: 34px;
+font-family: 'Kanit', sans-serif;
+
+}
+.flx{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   padding: 6vh 1vh 4vh 6vh;
+   gap: 3%;
+}
+.flx h1{
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;   
+}
+.flx div p{
+    padding-top: 2vh;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.flx div{
+    padding: 1vh 3vh 1vh 3vh;
+    width: 30%;
+    color: black;
+background-color: aqua;
+height: 60vh;
+}
+
+/* .flx button{
+    background-color: black;
+    border-radius: 8vh;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 1vh 3vh;
+} */
+.part3{
+    width: 100%;
+    height: 200vh;
+    padding-top: 5vh;
+
+}
+.line1{
+    width: 90%;
+    height: 0.5vh;
+    margin-left: 5%;
+    padding: 0vh 5% 0vh 5%;
+    background-color: aquamarine;
+}
+.part3 h1{
+    padding-left: 5%;
+    font-family: 'Kanit', sans-serif;
+
+}
+.part3 .lt1,.part3 .lt2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 6vh 1vh 4vh 6vh;
+   gap: 3%;
+
+}
+.lt1 div, .lt2 div{
+    background-color: rgb(172, 222, 231);
+    width: 30%;
+    height: 70vh;
+}
+.lt1 h1, .lt2 h1{
+    font-size: 24px;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+.lt1 p, .lt2 p{
+    font-size: 20px ;
+    padding: 1vh 2vh 1vh 2vh;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+
+}
+.part4{
+    width: 100%;
+    height: 200vh;
+}
+.part4 h1{
+    padding-left: 5%;
+    font-family: 'Kanit', sans-serif;   
+}
+.lyt1,.lyt2{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    padding: 6vh 1vh 4vh 6vh;
+    gap: 3%;
+}
+.lyt1 div, .lyt2 div{
+    background-color: rgb(172, 222, 231);
+    width: 30%;
+    height: 70vh;
+}
+.lyt1 h1, .lyt2 h1{
+    font-size: 24px;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+.lyt1 p, .lyt2 p{
+    font-size: 20px ;
+    padding: 1vh 2vh 1vh 2vh;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}

@@ -1,0 +1,678 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Edu+VIC+WA+NT+Beginner&family=Genos:wght@100&family=Gluten:wght@100&family=Kanit:wght@100&family=Nabla&family=Nunito:wght@200&family=Poppins:wght@100&family=Roboto:wght@100&family=Source+Code+Pro&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+.gwave{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    
+    justify-content: space-around;
+    background-color: rgb(17, 36, 36);
+    position: relative;
+    
+    color: whitesmoke;
+    
+
+ }
+ .gwave div{
+     z-index: 2;
+     
+ }
+ .gwave div h2{
+    font-family: 'Eczar', serif;
+    font-size: 88px;
+    padding-left: 15%;
+ }
+ .gwave div h1{
+     text-align: left;
+     padding-bottom: 10%;
+     padding-left: 15%;
+     
+    font-size: 44px;
+     font-family: 'Source Code Pro', monospace;
+ }
+ svg{
+     position: absolute;
+     left: 0%;
+     bottom: 0%;
+     z-index: 0;
+
+ }
+ .gwave #ti{
+    font-size: 39px;
+    font-family: 'Genos', sans-serif;
+    color: white;
+    width: 30vh;
+    font-weight: 800;
+    height: 7vh;
+    
+    position: absolute;
+    top: 11%;
+    right: 2%;
+
+    line-height:4.75vh ;
+    outline: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0003);
+  animation:logd  5s linear infinite;
+}
+    
+@keyframes logd {
+   
+    from{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 82px #03bcf4,
+        0 0 160px #03bcf4,
+        0 0 320px #79cbe4,
+        0 0 740px #03bcf4,
+       
+    }
+    to{
+            color: rgb(82, 162, 182);
+            text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 82px #03bcf4,
+            0 0 160px #03bcf4,
+            0 0 320px #79cbe4,
+            
+        
+    }
+}
+.nav{
+    box-sizing: border-box;
+    position:fixed;
+    top: 0vh;
+    left: 0vh;
+    z-index: 8;
+    background:linear-gradient(to left bottom,rgba(0, 0, 0, 0.547),rgba(9, 9, 42, 0.521));
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 100%;
+    height: 9.90vh;
+}
+
+
+
+.fa-bars{
+    display: none;
+}
+
+/*for navigation bar media*/
+@media screen and (min-width:500px) and (max-width:800px){
+
+.logo,.navitems{
+    display: none;
+}
+
+    .nav .fa-solid{
+        display: block;
+        
+    }
+.navitems{
+    width: 30%;
+    height: 70%;
+    background-color: #79cbe4;
+
+    display: none;
+
+}
+.navitems div{
+
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color: black;
+
+
+}
+    
+
+
+
+
+}
+.navitems{
+    width:70%;
+    display:flex;
+    justify-content:space-evenly;
+align-items:center;
+}
+.itemnav{
+font-size: 3.197vh;
+color: whitesmoke;
+text-decoration: none;
+border:0.25vh rgb(0, 0, 0);
+background-color: rgb(78, 226, 236);
+color:rgb(0, 0, 0);
+border-radius: 0.79vh;
+padding: 0.625vh 1.75vh;
+}
+.itemnav:hover{
+    background-color: black;
+    color: rgb(173, 156, 198);
+    transition: 3s;
+}
+.navitems button{
+    padding: 1.125vh 2.25vh;
+    background-color: rgba(93, 177, 32, 0.77);
+    color: rgb(0, 3, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 500;
+    border: 0.375vh rgb(34, 33, 25) solid;
+    border-radius: 1.875vh;
+}
+.logo-design{
+    text-transform: uppercase;
+    font-size: 4.8vh;
+   color: rgb(248, 253, 245);
+   font-weight: 600;
+    font-family:sans-serif;
+}
+
+.logo .logo-design:hover{
+color: aliceblue;
+    transition: 2s;
+}
+.logo{
+    border-radius: 0.125vh solid;
+    border-radius: 1.875vh;
+    padding: 0.75vh 1.25vh;
+    background-color: rgb(6, 17, 24);
+    font-size: 3.75vh;
+    margin-top: 1.875vh;
+    margin-bottom: 1.87vh;
+    letter-spacing: 0.25vh;
+    color: khaki;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height:4.75vh ;
+    outline: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0003);
+  animation:logod  5s linear infinite;
+}
+    
+@keyframes logod {
+    0%,18%,20%,50.1%,60%,70.1%,80%,90.1%,92%{
+        color:rgb(51, 204, 21);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,69%,80.1%,90%,92.1%,94%,96%,100%{
+        color: white;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 82px #03bcf4,
+        0 0 160px #03bcf4,
+        0 0 320px #79cbe4,
+        0 0 740px #03bcf4,
+        0 0 760px #91b2bd,
+        0 0 780px #03bcf4,
+        0 0 790px #79cbe4,
+        0 0 800px #03bcf4
+    }
+}
+.logo:hover{
+    background-color: black;
+    color: rgb(146, 167, 190);
+    transition: 3s;
+}
+.banner{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-image:linear-gradient(to right top,rgba(253, 253, 253, 0.03), rgba(84, 196, 200, 0.39)), url("https://wallpapercave.com/dwp1x/wp2681794.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+box-sizing: border-box;
+}
+
+.bannercard{
+width: 45%;
+height: 35.1%;
+background-color: rgba(240, 230, 140, 0.562);
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+border: 3px solid yellow;
+    padding: 6.5vh 3.8vw;
+}
+
+
+.bannercard:hover{
+    background: transparent;
+    transition: 4s;
+}
+.bannercard p{
+    font-size: 1.8vw;
+    color: rgb(23, 30, 87);
+}
+.bannercard .myname{
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    color: rgb(28, 5, 35);
+}
+.bannercard button{
+    display: block;
+    padding: 1.25vh 0.98vw;
+    border: 2px;
+    border-color: rgb(22, 22, 4);
+    border-radius: 7px;
+    font-size: 17px;
+    color: rgb(225, 225, 234);
+    background-color: rgb(15, 22, 54);
+    margin-left: 36%;
+}
+.call{
+background: url("https://www.analyticsinsight.net/wp-content/uploads/2019/12/AI-for-Data-Management.jpg");
+width: 100%;
+height: 60vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 60vh;
+position: relative;
+
+top: -1.25vh;
+}
+
+.callaction{
+font-size: 1.9vw;
+color: rgb(255, 255, 255);
+
+}
+.callaction span{
+    color: chartreuse;
+    font-size: 2vw;
+}
+
+.mailbtn{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid yellow;
+    color: greenyellow;
+    background-color: black;
+    padding: 1.75vh 1.1vw;
+    border-radius: 12px;
+    top: 13.1vh;
+    left: 22.8vw;
+}
+.mobilebtn{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid yellow;
+    color: greenyellow;
+    background-color: black;
+    padding:1.75vh 1.1vw;
+    border-radius: 12px;
+    top:8.9vh;
+    left: 40vw;
+}
+.mobilebtn:hover{
+background-color: rgb(54, 155, 177);
+transition: 3s;
+}
+
+.mailbtn:hover{
+    background-color: rgb(54, 155, 177);
+    color: rgb(14, 17, 40);
+    font-weight: 500;
+    transition: 3s;
+    }
+.cardtype{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    gap: 0.48vw;
+    flex-wrap: wrap;
+    padding-left: 1.98vw;
+    padding-right: 1.98vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    text-align: center;
+    width: 29%;
+    height: 36.25vh;
+    background-color: rgba(47, 180, 197, 0.795);
+    border-top: 1vh goldenrod solid;
+}
+.card:hover{
+    box-shadow: 2px 2px 5px 5px rgb(44, 5, 34);
+}
+.card h3{
+    font-size: 2.1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(23, 12, 51);
+}
+.card p{
+    padding: 2.13vh 0.6vw;
+    font-weight:500;
+    color: rgb(5, 5, 23);
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.card button{
+    border: 2px yellowgreen;
+    background-color: black;
+    color: white;
+    font-size: 1.4vw;
+    padding: 1.15vh 1vw;
+    border-radius: 16px;
+    margin-top: 7vh;
+    text-decoration: none;
+}
+.card button:hover{
+    background-color: aqua;
+    color: rgb(8, 27, 77);
+    transition: 2s;
+}
+.card4{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(162, 208, 222);
+}
+footer{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 7.5vh;
+    font-size: 1.9vw;
+    padding-top: 3vh;
+    text-align: center;
+}
+.banner1{
+    margin-left: 3.7vw;
+    text-align: left;
+    display: flex;
+    width: 89%;
+    height: 84vh;         /*height=600px*/
+background: rgb(232, 237, 240);
+}
+.banner1-content{
+    box-sizing: border-box;
+    width: 50%;
+    padding-top: 11.3%;
+    padding-left:3.4vw;
+}
+.banner1-content h1{
+    font-size: 340%;
+    font-family:'charlotte';
+}
+.banner1-content p{
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner1-content-mail{
+    padding-top:4vh;
+}
+.banner1-content-mail label{
+    padding: 1.2vh 0.8vw;
+    margin-left: 2.1vw;
+    font-size: 148%;
+    background-color: black;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    text-shadow: 1px 1px rgb(252, 252, 252);
+}
+.banner1-content-mail input[type="email"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+border-bottom: 4px rgb(61, 16, 70) solid;
+height: 4vh;
+width: 55%;
+background-color: rgb(255, 255, 255);
+border-radius: 30px;
+}
+.banner1-photo{
+    box-sizing: border-box;
+    width: 50%;
+}
+.banner1-photo img{
+    box-sizing: border-box;
+    height: 90%;
+    width: 90%;
+    padding-top: 6.25vh;
+    padding-left: 1.6vw;
+}
+.footer1{
+    width: 100%;
+    height: 75vh;
+    background: rgba(58, 6, 6, 0.877);
+    color: whitesmoke;
+    display: flex;
+    justify-content:start;
+    position: relative;
+}
+.footer1-end1{
+    box-sizing: border-box;
+width: 50%;
+padding-top: 8.2vh;
+padding-left: 6vw;
+
+}
+.footer1-end1 h1{
+    font-size: 345%;
+    /*font size=43px*/
+}
+.footer1-end1 h2{
+    font-size: 39px;
+    padding: 5vh 0px;
+    box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif;
+    animation: cname 3s ease-in-out infinite;
+}
+@keyframes cname {
+0%{
+    color: white;
+}    
+50%{
+    color: green;
+}
+75%{
+    color: blue;
+}
+100%{
+    color: rgb(93, 164, 177);
+}
+}
+.footer1-end2{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+.end1-div1{
+    padding-top: 10vh;
+    height: 38%;
+}
+.end1-div1 .input1{
+    width: 19.9vw;
+    height: 5vh;
+border: none;
+border-bottom: 2px solid white;
+background-color: transparent;
+}
+/*media tags*/
+@media screen and (min-width:600px) and (max-width:1000px) and (min-height:650px) and (max-width:1000px){
+/*-------------------------------for footer -1------------------------------------------------*/    
+.footer1{
+    width: 100%;
+    height: 70vh;
+    background: rgba(105, 190, 25, 0.74);
+    color: whitesmoke;
+    display: flex;
+    justify-content:start;
+    position: relative;
+    color: black;
+}
+.gwave div{
+    z-index: 2;
+    
+}
+.gwave div h2{
+   font-family: 'Eczar', serif;
+   font-size: 44px;
+   padding-left: 15%;
+}
+.gwave div h1{
+    text-align: left;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    
+   font-size: 22px;
+    font-family: 'Source Code Pro', monospace;
+}
+svg{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 0;
+
+}
+.footer1-end1{
+    box-sizing: border-box;
+width: 40%;
+padding-top: 5.2vh;
+padding-left: 4vw;
+
+}
+.footer1-end1 h1{
+   
+    font-size:30px;
+}
+.footer1-end1 h2{
+    font-size: 29px;
+    padding: 3vh 0px;
+    box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif;
+   
+}
+
+.footer1-end2{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+}
+.end1-div1{
+    padding-top: 10vh;
+    height: 38%;
+}
+.end1-div1 .input1{
+    width: 16.9vw;
+    height: 5vh;
+border: none;
+border-bottom: 1px solid rgb(32, 8, 43);
+background-color: transparent;
+}
+/*media tags*/
+
+.end1-div1 button{
+    padding: 1.1vh 1vw;
+    font-size: 12px;
+    background-color: rgb(181, 225, 228);
+    color: whitesmoke;
+}
+.end2-btn{
+    position: absolute;
+    top: 32%;
+    right: 10%;
+}
+.end1-div2{
+    display: flex;
+    width: 30%;
+    align-items:start;
+    justify-content:space-around;
+
+}
+.end1div2-1{
+    font-size: 15px;
+}
+.end1div2-2{
+    padding-left: 0.5vw;
+    line-height: 0.5vh;
+    font-size: 11px;
+    display: block;
+}
+.smedia{
+    width: 30%;
+    display: flex;
+    gap: 2%;
+    justify-content: space-evenly;
+}
+.smedia a{
+text-decoration: none;
+color: rgb(10, 6, 26);
+}
+}
+/*--------------------------------end footer -1---------------------------------------------------------------*/
+.end1-div1 button{
+    padding: 1.8vh 2vw;
+    font-size: 20px;
+    background-color: rgb(34, 19, 61);
+    color: whitesmoke;
+}
+.end2-btn{
+    position: absolute;
+    top: 32%;
+    right: 17%;
+}
+.end1-div2{
+    padding-top:7vh;
+    display: flex;
+    width: 50%;
+    align-items:start;
+    justify-content:space-around;
+
+}
+.end1div2-1{
+    font-size: 23px;
+}
+.end1div2-2{
+    padding-left: 1.8vw;
+    line-height: 3.96vh;
+    font-size: 18px;
+    display: block;
+}
+.smedia{
+    width: 48%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.smedia a{
+text-decoration: none;
+color: rgb(200, 248, 240);
+}
+.maps{
+    box-sizing: border-box;
+    height: 52vh;
+    width: 100%;
+    border: 3px blueviolet solid;
+    overflow: hidden;
+}
+.maps iframe{
+    width: 100%;
+}

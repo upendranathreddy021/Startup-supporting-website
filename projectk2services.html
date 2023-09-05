@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./projectk2servicescss.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Edu+VIC+WA+NT+Beginner&family=Genos&family=Gluten:wght@100&family=Kanit:wght@300&family=Lobster&family=Nunito:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navi">
+        <nav class="navbar">
+            <div class="nav">
+
+            </div>
+            <div class="nav1">
+                <div><a href="./projectk2.html">Home</a></div>
+                <div><a href="">Services</a></div>
+                <div><a href="./projectk2career.html">Careers</a></div>
+                <div><a href="./projectk2aboutus.html">Aboutus</a></div>
+                <div><a href="./projectk2login.html">Login</a></div>
+            </div>
+        </nav>
+    </div>
+    <div class="part1">
+        <div class="part11">
+        <h1>Services</h1>
+        <h2>Simple Solutions Require</h2>
+        <h2>Complex Process</h2>
+        <div>
+            <p>Our team of Experts ranges from analysts and financial experts</p>
+            <p>to forecasting ananlysis and investor clients. All the Resources we</p>
+            <p>need to ensure a Successful outcome</p>
+
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="part2">
+        <h1>Marketing :</h1>
+        <div class="flx">
+            <div><h1>Content Marketing</h1>
+            <p> Content marketing focuses on creating and distributing valuable, relevant, and consistent content to attract and retain a targeted audience. This can include blog posts, articles, videos, infographics, and more. By providing informative and engaging content, you establish thought leadership, build trust, and drive traffic to your website.</p>
+            <!-- <button>Read More</button>     -->
+        </div>
+            <div><h1>Social Media Marketing</h1>
+            
+        <p>Social media marketing involves promoting your website and contention social media platforms such as Facebook, Twitter, Instagram, 
+             LinkedIn, and others. It helps build brand awareness, engage with your audience, drive traffic, and generate leads. Social media advertising can also be used to target specific demographics and increase visibility.</p>
+             <!-- <button>Read More</button> -->
+            </div>
+             
+             <div><h1>Affiliate Marketing</h1>
+            <p> Affiliate marketing involves collaborating with affiliates or publishers who promote your products or services on their websites or through other marketing channels. In return, they earn a commission for each sale or lead generated. This helps expand your reach and increase conversions.</p>
+            -->
+        </div>
+           
+        </div>
+        
+
+    </div >
+    <div class="line1"></div>
+
+
+
+
+
+    <div class="acc">
+        <div>
+            <h1>Marketing <i class="fa-solid fa-caret-up" onclick="acd(0)"></i></h1>
+            <div class="acc1">
+                <p>Content Marketing</p>
+                <p>Social Media Marketing</p>
+                <p>Affiliate Marketing</p>
+            </div>
+        </div>
+        <div>
+            <h1>Financial Analysis <i class="fa-solid fa-caret-down" onclick="acd(1)"></i></h1>
+            <div class="acc1">
+                <p>Valuation Analysis</p>
+                <p>Trend Analysis</p>
+                <p>Comparitive Analysis</p>
+                <p>Financial Statement Analysis</p>
+                <p>Cash-flow Analysis</p>
+                <p>Break-Even Analysis</p>
+            </div>
+        </div>
+        <div>
+            <h1>Investing <i class="fa-solid fa-caret-down" onclick="acd(2)"></i></h1>
+            <div class="acc1">
+                <p>Equity Investment</p>
+                <p>Debt Investment</p>
+                <p>Venture Capital</p>
+                <p>Private Equity</p>
+                <p>Intial public offering </p>
+                <p>Angel Investing</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        //javascript for the accordian in services page
+        let accr=document.getElementsByClassName("acc1")
+        let itemr=document.getElementsByClassName("fa-solid")
+        accr[0].style.display="block"
+        let i=0
+        function acd(x){
+            if(i==x){
+                if(accr[i].style.display=="none")
+                {
+                    accr[i].style.display="block"
+                    itemr[i].className="fa-solid fa-caret-up"
+                }
+                else
+                {
+                    accr[i].style.display="none"
+                    itemr[i].className="fa-solid fa-caret-down"
+                }
+
+            }
+            else{
+                accr[i].style.display="none"
+                itemr[i].className="fa-solid fa-caret-down"
+
+
+                accr[x].style.display="block"
+                itemr[x].className="fa-solid fa-caret-up"
+                i=x
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+    <div class="part3">
+        <h1>Financial Analisys</h1>
+        <div class="lt1">
+            <div class="lt11">
+                <h1>Valuation Analysis</h1>
+                <p>Valuation analysis is performed to determine the intrinsic value of a company or its securities (e.g., stocks, bonds). Various methods, such as discounted cash flow (DCF) analysis, price-to-earnings (P/E) ratio analysis, and comparable company analysis, are used to estimate the value of the company. Valuation analysis is important for investment decisions, mergers and acquisitions, and determining the fair value of assets.</p>
+            </div>
+            <div class="lt11">
+                <h1>Trend Analysis</h1>
+                <p>Trend analysis examines financial data over multiple periods to identify patterns, trends, and changes over time. It helps evaluate the direction and magnitude of changes in key financial metrics such as revenue, expenses, profitability, and working capital. Trend analysis allows for a deeper understanding of a company's financial performance and helps in forecasting future trends.</p>
+            </div>
+            <div class="lt11">
+                <h1>Comparative Analysis</h1>
+                <p>Comparative analysis involves comparing a company's financial performance with that of its competitors or industry benchmarks. This type of analysis helps assess the company's relative position and performance in the market. Comparative analysis can be done using financial ratios, key performance indicators (KPIs), or other financial metrics to evaluate strengths, weaknesses, and areas of improvement.</p>
+            </div>
+        </div>
+        <div class="lt2">
+            <div class="lt21">
+                <h1>Financial Statement Analysis</h1>
+                <p> Financial statement analysis involves a comprehensive examination of a company's financial statements, including the balance sheet, income statement, and cash flow statement. This analysis helps assess the overall financial health, stability, and profitability of the company. It involves assessing the quality of financial reporting, understanding the impact of accounting policies, and identifying important trends and insights within the financial statements</p>
+            </div>
+            <div class="lt21">
+                <h1>Cash Flow Analysis</h1>
+                <p>Cash flow analysis focuses on understanding and evaluating the sources and uses of cash within a company. It involves analyzing the company's operating, investing, and financing cash flows to assess its ability to generate and manage cash. Cash flow analysis helps identify cash flow patterns, liquidity risks, and the company's ability to meet its short-term and long-term obligations.                </p>
+            </div>
+            <div class="lt21">
+                <h1>Break-Even Analysis</h1>
+                <p>Break-even analysis determines the point at which a company's revenue equals its total costs, resulting in neither profit nor loss. It helps determine the minimum level of sales or production volume required to cover costs and start generating profits. Break-even analysis is useful for evaluating the viability of new projects, pricing decisions, and cost management strategies.                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="line1"></div>
+    <div class="part4">
+        <h1>Investment :</h1>
+        <div>
+            <div class="lyt1">
+                <div class="lyt11">
+                    <h1>Equity Investments</h1>
+                    <p>
+                        Equity investments involve purchasing shares or stocks of a company, which represent ownership in the company. Equity investors participate in the company's profits and losses and may have voting rights in decision-making processes. These investments can be made directly by buying stocks on stock exchanges or indirectly through mutual funds, index funds, or exchange-traded funds (ETFs) that hold portfolios of company stocks.
+                    </p>
+                </div>
+                <div class="lyt11">
+                    <h1>Debt Investments</h1>
+                    <p>
+                        : Debt investments involve lending money to a company in exchange for regular interest payments and the return of the principal amount at maturity. This can be done by purchasing corporate bonds, debentures, or other debt securities issued by the company. Debt investments are generally considered less risky than equity investments and provide fixed income to investors
+                    </p>
+                </div>
+                <div class="lyt11">
+                    <h1>Venture Capital</h1>
+                    <p>
+                        Venture capital investments are made in early-stage or startup companies with high growth potential. Venture capitalists provide capital in exchange for equity ownership in the company. They typically invest in innovative businesses or ideas and actively participate in the strategic decision-making process. Venture capital investments carry higher risks but can yield significant returns if the company succeeds
+                    </p>
+                </div>
+            </div>
+            <div class="lyt2">
+                <div class="lyt21">
+                    <h1>Private Equity</h1>
+                    <p>
+                        Private equity investments involve buying shares or ownership stakes in privately held companies. Private equity firms pool funds from institutional investors or high-net-worth individuals to invest in companies with growth potential or that are undergoing restructuring. Private equity investments often involve active management and aim to improve the company's performance over a period of time before selling the investment.
+                    </p>
+                </div>
+                <div class="lyt21">
+                    <h1>Initial Public Offerings (IPOs)</h1>
+                    <p>
+                        IPOs occur when a private company offers its shares to the public for the first time. Investors can participate in an IPO by purchasing shares directly from the company. IPOs offer an opportunity to invest in companies at an early stage and potentially benefit from the company's growth and subsequent increase in stock price.
+                    </p>
+                </div>
+                <div class="lyt21">
+                    <h1>Angel Investing:</h1>
+                    <p>
+                        Angel investing refers to individuals providing early-stage funding to startups in exchange for equity ownership. Angel investors are typically high-net-worth individuals who bring not only capital but also expertise, mentorship, and networks to support the growth of the company. Angel investing involves high risks but can lead to substantial returns if the startup succeeds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+</body>
+</html>
